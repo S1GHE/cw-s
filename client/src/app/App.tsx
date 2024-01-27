@@ -1,7 +1,9 @@
+import 'src/app/style/index.scss';
+
 export const App = () => {
     return (
         <div>
-            App
+            <p>Главная</p>
         </div>
     );
 };

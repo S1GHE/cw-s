@@ -1,0 +1,11 @@
+@use "src/app/style/config/config";
+@use "src/app/style/config/reset";
+
+body{
+  background-color: var(--dark-06);
+  font-family: 'Manrope', sans-serif;
+
+  h1, h2, h3, h4, h5, h6, span, p, label{
+    color: var(--grey-70);
+  }
+}

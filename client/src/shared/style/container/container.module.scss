@@ -1,0 +1,18 @@
+@use "src/shared/style/module/func";
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  @media (max-width: 1440px) {
+    max-width: 100%;
+  }
+}
+
+.wrapper {
+  padding-inline: func.vw(0, 1920);
+  @include func.mediaPaddingInline(1440px, 20, 1440);
+  @include func.mediaPaddingInline(960px, 20, 960);
+  @include func.mediaPaddingInline(720px, 20, 720);
+  @include func.mediaPaddingInline(540px, 20, 540);
+  @include func.mediaPaddingInline(420px, 20, 420);
+}

@@ -1,0 +1,69 @@
+@use "src/shared/style/module/func";
+
+.header{
+  font-weight: bold;
+  font-size: func.vw(48, 1920);
+
+  @include func.mediaText(1440px, 48, 1440);
+  @include func.mediaText(960px, 48, 960);
+  @include func.mediaText(720px, 48, 720);
+  @include func.mediaText(540px, 48, 540);
+  @include func.mediaText(420px, 28, 420);
+
+  &__4{
+    font-weight: bold;
+    font-size: func.vw(32, 1920);
+
+    @include func.mediaText(1440px, 32, 1440);
+    @include func.mediaText(960px, 32, 960);
+    @include func.mediaText(720px, 32, 720);
+    @include func.mediaText(540px, 32, 540);
+    @include func.mediaText(420px, 32, 420);
+  }
+
+  &__6{
+    font-weight: bold;
+    font-size: func.vw(20, 1920);
+
+    @include func.mediaText(1440px, 20, 1440);
+    @include func.mediaText(960px, 20, 960);
+    @include func.mediaText(720px, 20, 720);
+    @include func.mediaText(540px, 20, 540);
+    @include func.mediaText(420px, 20, 420);
+  }
+}
+
+.paragraph{
+  font-size: func.vw(16, 1920);
+
+  @include func.mediaText(1440px, 16, 1440);
+  @include func.mediaText(960px, 16, 960);
+  @include func.mediaText(720px, 16, 720);
+  @include func.mediaText(540px, 16, 540);
+  @include func.mediaText(420px, 16, 420);
+
+  &__lighter{
+    @extend .paragraph;
+    font-weight: lighter;
+  }
+
+  &__18{
+    font-size: func.vw(18, 1920);
+
+    @include func.mediaText(1440px, 18, 1440);
+    @include func.mediaText(960px, 18, 960);
+    @include func.mediaText(720px, 18, 720);
+    @include func.mediaText(540px, 18, 540);
+    @include func.mediaText(420px, 18, 420);
+  }
+
+  &__14{
+    font-size: func.vw(14, 1920);
+
+    @include func.mediaText(1440px, 14, 1440);
+    @include func.mediaText(960px, 14, 960);
+    @include func.mediaText(720px, 14, 720);
+    @include func.mediaText(540px, 14, 540);
+    @include func.mediaText(420px, 14, 420);
+  }
+}

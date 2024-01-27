@@ -1,0 +1,15 @@
+@function vw($value, $size){
+  @return calc($value / $size * 100vw);
+}
+
+@mixin mediaText($maxWidth, $value, $size){
+  @media (max-width: $maxWidth) {
+    font-size: vw($value, $size);
+  }
+}
+
+@mixin mediaPaddingInline($maxWidth, $value, $size){
+  @media (max-width: $maxWidth) {
+    padding-inline: vw($value, $size);
+  }
+}

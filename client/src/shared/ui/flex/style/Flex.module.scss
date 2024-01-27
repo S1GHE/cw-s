@@ -1,0 +1,27 @@
+@use "src/shared/style/module/func";
+
+.flex_text_icon{
+  display: flex;
+  align-items: center;
+  gap: func.vw(10, 1920);
+  
+  @media (max-width: 1440px) {
+    gap: func.vw(10, 1440);
+  }
+
+  @media (max-width: 960px) {
+    gap: func.vw(10, 960);
+  }
+
+  @media (max-width: 720px) {
+    gap: func.vw(10, 720);
+  }
+
+  @media (max-width: 540px) {
+    gap: func.vw(10, 540);
+  }
+
+  @media (max-width: 420px) {
+    gap: func.vw(10, 420);
+  }
+}

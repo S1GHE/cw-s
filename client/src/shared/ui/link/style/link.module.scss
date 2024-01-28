@@ -1,0 +1,58 @@
+@use "src/shared/style/module/func";
+
+.purple_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: func.vw(18, 1920) func.vw(50, 1920);
+  background-color: var(--purple-60);
+  border-radius: 100px;
+  box-shadow: 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28) inset;
+  border: 1px solid transparent;
+  transition-duration: 300ms;
+
+  &:hover{
+    border: 1px solid var(--purple-60);
+    background-color: var(--purple-55);
+    box-shadow: none;
+  }
+
+  &:active{
+    opacity: 50%;
+    scale: 0.9;
+    border: 1px solid var(--purple-60);
+    background-color: var(--purple-55);
+    box-shadow: none;
+  }
+  
+  @media (max-width: 1440px) {
+    padding: func.vw(18, 1440) func.vw(50, 1440);
+  }
+
+  @media (max-width: 960px) {
+    padding: func.vw(18, 960) func.vw(50, 960);
+  }
+
+  @media (max-width: 720px) {
+    padding: func.vw(18, 720) func.vw(50, 720);
+  }
+
+  @media (max-width: 540px) {
+    padding: func.vw(10, 540) func.vw(25, 540);
+
+    & object{
+      width: func.vw(16, 540);
+      height: auto;
+    }
+  }
+
+  @media (max-width: 420px) {
+    padding: func.vw(10, 420) func.vw(25, 420);
+
+    & object{
+      width: func.vw(16, 420);
+      height: auto;
+    }
+  }
+}

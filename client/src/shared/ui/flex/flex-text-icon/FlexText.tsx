@@ -16,9 +16,7 @@ export const FlexTextIcon:FC<IFlexTextIcon> = (props) => {
         } style={revers ? {flexDirection: "row-reverse"}: undefined}>
             <object data={src} type="image/svg+xml"></object>
 
-            <div>
-                {children}
-            </div>
+            {children}
         </div>
     );
 }

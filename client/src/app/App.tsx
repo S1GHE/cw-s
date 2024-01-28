@@ -1,13 +1,11 @@
 import 'src/app/style/index.scss';
-import {BaseBtn} from "src/shared/ui/button/inedx.ts";
+import {BrowserRouter} from "react-router-dom";
+import {RouterApp} from "src/app/router/RouterApp.tsx";
 
 export const App = () => {
     return (
-        <div>
-            <BaseBtn onClick={() => console.log("kek")}>
-                <p>Hello</p>
-            </BaseBtn>
-
-        </div>
+        <BrowserRouter>
+            <RouterApp/>
+        </BrowserRouter>
     );
 };

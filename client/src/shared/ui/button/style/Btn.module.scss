@@ -8,17 +8,16 @@
   border-radius: 10px;
   border: 1px solid var(--dark-20);
   background-color: var(--dark-12);
+  color: var(--ac-white);
   padding: func.vw(18, 1920) func.vw(32, 1920);
   transition-duration: 300ms;
 
   &:hover, &:focus{
-    color: var(--ac-white);
     background-color: var(--dark-20);
     border: 1px solid var(--grey-40);
   }
 
   &:active{
-    color: var(--ac-white);
     background-color: var(--dark-20);
     border: 1px solid var(--grey-40);
     opacity: 0.5;

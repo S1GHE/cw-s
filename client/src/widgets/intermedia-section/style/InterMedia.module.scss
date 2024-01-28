@@ -1,0 +1,14 @@
+@use "src/shared/style/module/func";
+
+.inter_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: func.vw(40, 1920);
+}
+
+.inter_hr{
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark-12);
+}

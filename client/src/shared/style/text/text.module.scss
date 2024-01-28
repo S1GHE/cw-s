@@ -45,7 +45,19 @@
   &__lighter{
     @extend .paragraph;
     font-weight: lighter;
+
+    &__20{
+      @extend .paragraph__lighter;
+      font-size: func.vw(20, 1920);
+
+      @include func.mediaText(1440px, 20, 1440);
+      @include func.mediaText(960px, 20, 960);
+      @include func.mediaText(720px, 20, 720);
+      @include func.mediaText(540px, 20, 540);
+      @include func.mediaText(420px, 20, 420);
+    }
   }
+
 
   &__18{
     font-size: func.vw(18, 1920);
